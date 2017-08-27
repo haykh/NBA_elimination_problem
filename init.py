@@ -1,11 +1,6 @@
 #!/bin/python3
 
-import re
-import os
 import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-from operator import itemgetter
 
 #getting game logs
 gamelogs=np.genfromtxt('2016_17_NBA_Scores-Table.csv', delimiter=';', unpack=True, dtype=None)
