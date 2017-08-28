@@ -11,7 +11,7 @@ in the terminal. The output is a team title + either "Playoffs" if a team qualif
 * `*.csv` files contain the whole data of the season games.
 * `main.py` is the main program that contains the numerical algorithm looped over all the teams of Eastern and Western conference.
 * `init.py` contains auxiliary functions that read data from `*.csv` and provide necessary values.
-* `write_inits.py` pre-evaluate games left between two teams and the results of head-to-head games up to a particular date and save those values to `gamesleft/` and `h2h/` directories. This increases the speed of our algorithm. This should be called once, unless you already have those directories full.
+* `write_inits.py` pre-evaluate games left between two teams and the results of head-to-head games up to a particular date and save those values to `gamesleft/` and `h2h/` directories. This approach increases the speed of our algorithm. Functions `write_gamesleft()` and `write_h2h()` should be called just once to generate files in the above mentioned directories. In this repo they're already filled with all the necessary files, so no need to call those functions again.
 * `helper.py` simply contains a progress bar for `write_inits.py`.
 
 #### Dependencies
